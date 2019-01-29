@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="@string/enter_your_name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@color/primary_color"
+        android:textColorHint="@color/primary_color" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:onClick="dispatchTakePictureIntent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/imageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="dispatchTakePictureIntent"
+        android:text="@string/take_photo_for_Tshirt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editOptional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:hint="@string/order_message_instructions"
+        android:inputType="textMultiLine"
+        android:textColor="@color/primary_color"
+        android:textColorHint="@color/primary_color" />
+
+
+    <TextView
+        android:id="@+id/editCollect"
+        android:layout_width="242dp"
+        android:layout_height="24dp"
+        android:layout_alignEnd="@+id/imageText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/ready_time"
+        android:textColor="@color/primary_color"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editCustomer"
+        android:layout_alignTop="@+id/editCollect"
+        android:layout_gravity="center"
+        android:layout_marginEnd="0dp"
+        android:gravity="left"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:onClick="sendEmail"
+        android:text="@string/send_order"
+        android:textColor="@color/primary_color" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <paths package="sda.oscail.edu.actiontabsr">
+    <external-path name="my_images"
+      path="Android/data/sda.oscail.edu.actiontabs/document/primary" />
+    </paths>
+
